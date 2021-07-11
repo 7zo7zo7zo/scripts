@@ -1,3 +1,2 @@
 #!/bin/bash
-
-( cd ~/slstatus && sudo make clean install )
+cd ~/slstatus ; sudo make clean install

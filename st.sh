@@ -1,3 +1,2 @@
 #!/bin/bash
-
-( cd ~/st && sudo make clean install )
+cd ~/st ; sudo make clean install
