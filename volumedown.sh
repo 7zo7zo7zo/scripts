@@ -1,2 +1,2 @@
 #!/bin/bash
-amixer set Master 2%-
+amixer -qM set Master 2%-
