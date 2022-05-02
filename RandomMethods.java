@@ -22,4 +22,22 @@ public class RandomMethods {
         }
         return newArray;
     }
+    public int darken(int value, int amount) {
+        int red = (value >> 16) & 0xFF;
+        int green = (value >> 8) & 0xFF;
+        int blue = (value) & 0xFF;
+
+        red -= amount;
+        green -= amount;
+        blue -= amount;
+
+        if(red < 0) red = 0;
+        if(red > 255) red = 255;
+        if(green < 0) green = 0;
+        if(green > 255) green = 255;
+        if(blue < 0) blue = 0;
+        if(blue > 255) blue = 255;
+
+        return (red << 16) + (green << 8) + blue;
+    }
 }
